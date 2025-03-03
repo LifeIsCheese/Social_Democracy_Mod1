@@ -9,14 +9,16 @@ tags: party_affairs
 
 = Party Resources
 
-Due to a surpluss of resources, our advisors suggest adding it to the national budget.
+Due to a surplus of resources, our advisors suggest adding it to the national budget.
 
-  - @convert: Yes, we must use our party recources to help our budget.
-  - @root: No need.
-  - @easy_discard
+- @convert: Yes, we must use our party recources to help our budget.
+- @root: No need.
+- @easy_discard
 
-  @convert
-  subtitle: -1 resources
-  choose-if: resources >= 1
-  unavailable-subtitle: Not enough resources.
-  on-arrival: resources -=1; budget +=1
+@convert
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -=1; budget +=1
+
+We have successfully converted our party resources into the national budget.
