@@ -1,9 +1,9 @@
 title: Party Resources
 new-page: true
-view-if: started
+view-if: spd_in_government = 1
 on-arrival: month_actions += 1
 is-card: true
-frequency: 400
+frequency: 300
 card-image: img/Reichstagsfraktion_der_SPD.jpg
 tags: party_affairs
 
@@ -16,10 +16,10 @@ Due to a surplus of resources, our advisors suggest adding it to the national bu
 - @easy_discard
 
 @convert
-subtitle: -1 resources
-choose-if: resources >= 1
+subtitle: -2 resources +1 Budget
+choose-if: resources >= 2
 unavailable-subtitle: Not enough resources.
 view-if: started
-on-arrival: resources -=1; budget +=1
+on-arrival: resources -=2; budget +=1
 
 We have successfully converted our party resources into the national budget.
