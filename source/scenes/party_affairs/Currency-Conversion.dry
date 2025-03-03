@@ -1,0 +1,22 @@
+title: Party Resources
+new-page: true
+view-if: resources >= 1
+on-arrival: month_actions += 1
+max-visits: 36
+is-card: true
+frequency: 100
+card-image: img/Reichstagsfraktion_der_SPD.jpg
+
+  = Party Resources
+
+  Due to a surpluss of resources, our advisors suggest adding it to the national budget.
+
+    - @convert: Yes, we must use our party recources to help our budget.
+    - @root: No need.
+    - @easy_discard
+
+    @convert
+    subtitle: -1 resources
+    choose-if: resources >= 1
+    unavailable-subtitle: Not enough resources.
+    on-arrival: resources -=1; budget +=1;
