@@ -3,7 +3,7 @@ new-page: true
 view-if: started
 on-arrival: month_actions += 1
 is-card: true
-frequency: 300
+frequency: 400
 card-image: img/Reichstagsfraktion_der_SPD.jpg
 
 = Party Resources
