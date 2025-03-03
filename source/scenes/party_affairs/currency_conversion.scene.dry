@@ -5,6 +5,7 @@ on-arrival: month_actions += 1
 is-card: true
 frequency: 400
 card-image: img/Reichstagsfraktion_der_SPD.jpg
+tags: party_affairs
 
 = Party Resources
 
