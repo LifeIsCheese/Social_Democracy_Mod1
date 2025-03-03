@@ -19,6 +19,7 @@ Due to a surplus of resources, our advisors suggest adding it to the national bu
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
+view-if: started
 on-arrival: resources -=1; budget +=1
 
 We have successfully converted our party resources into the national budget.
