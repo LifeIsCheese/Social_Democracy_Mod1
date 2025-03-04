@@ -1,6 +1,6 @@
 title: Party Resources
 new-page: true
-view-if: spd_in_government = 1
+view-if: spd_in_government = 1 and resources >= 1 
 on-arrival: month_actions += 1
 is-card: true
 frequency: 300
