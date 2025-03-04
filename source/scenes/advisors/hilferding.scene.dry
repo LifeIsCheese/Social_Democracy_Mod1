@@ -14,6 +14,7 @@ Hilferding is an economist and a disciple of Karl Kautsky. Originating from Vien
 - @toleration
 - @finance_ministry_
 - @economic_democracy_
+- @party_recources
 - @root: Return to main
 
 @against_right_and_left
@@ -49,3 +50,11 @@ unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +
 choose-if: advisor_action_timer == 0 and spd_in_government == 1 and (economic_minister_party == "SPD" or finance_minister_party == "SPD") and (labor_minister_party == "SPD")
 on-arrival: advisor_action_timer = 6; economic_democracy_timer -= 10; last_advisor_action = 1
 go-to: economic_democracy
+
+@party_recources
+title: Party Recources
+subtitle: We can convert our party recources into the budget
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if spd_in_government = 0 : SPD not in government: ?] [? if labor_minister_party != "SPD" or (finance_minister_party != "SPD" and economic_minister_party != "SPD") : We do not have the necessary government ministers. ?]
+choose-if: advisor_action_timer == 0 and spd_in_government == 1 and (economic_minister_party == "SPD" or finance_minister_party == "SPD") and (labor_minister_party == "SPD")
+on-arrival: advisor_action_timer = 6; economic_democracy_timer -= 10; last_advisor_action = 1
+go-to: currency_conversion
