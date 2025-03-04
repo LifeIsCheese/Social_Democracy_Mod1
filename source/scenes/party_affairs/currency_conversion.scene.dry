@@ -4,7 +4,7 @@ view-if: spd_in_government = 1 and resources >= 1
 on-arrival: month_actions += 1
 is-card: true
 frequency: 300
-card-image: img/Reichstagsfraktion_der_SPD.jpg
+card-image: img/Reichsbank.jpg
 tags: party_affairs
 
 = Party Resources
