@@ -638,4 +638,13 @@ tags: nonfactional_advisor
 
 Friedrich Stampfer is now an advisor.
 
+@add_deng
+title: Deng Xiaoping
+subtitle: Deng Xiaoping is very cool
+card-image: img/portraits/Deng_Xiaoping.jpg
+view-if: deng_advisor = 0 and n_advisors < 3
+on-arrival: deng_advisor = 1; n_advisors += 1
+go-to: advisor_menu
+tags: center_advisor
 
+Friedrich Stampfer is now an advisor.
